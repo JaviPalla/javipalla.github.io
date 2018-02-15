@@ -25,13 +25,14 @@
 
     <script src="./content/js/home.js"></script>
     <script src="./content/js/500pxPhotos.js"></script>
+    <script src="./content/js/flickrPhotos.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
-    <div class="customContainer navbar-fixed-top">
+    <div id="navbarjp" class="customContainer navbar-fixed-top">
         <div class="container">
             <div class="row">
                 <nav class="navbar">
@@ -42,7 +43,7 @@
                         </a>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#photos">PHOTOS</a></li>
+                            <li><a href="#photosContainer">PHOTOS</a></li>
                             <li><a href="#design">DESIGN</a></li>
                             <li><a href="#contact">CONTACT</a></li>
                         </ul>
@@ -55,9 +56,18 @@
 
     <div class="animated fadeIn" id="whoami">
         <img src="./content/img/whoami.png" />
+        <div class="overlayed">
+            <p>When we strive to become better than we are,<br/> everything around us becomes better too</p>
+        </div>
     </div>
 
-    <div class="container">
+    <div id="photosContainer" class="container separated">
+        <div class="title">
+            <h2>S O M E&nbsp;&nbsp;O F&nbsp;&nbsp;M Y&nbsp;&nbsp;W O R K
+                <div class="pull-right"><img id="flickr-logo" class="svg social-link" src="./content/img/flickr.svg" />
+                    <img id="500px-logo" class="svg social-link" src="./content/img/500px.svg" /></div></h2>
+
+        </div>
         <div id="photos" class="row text-center animated fadeInUp">
             <div class="row">
                 <div id="photo1" class="col-md-6">
