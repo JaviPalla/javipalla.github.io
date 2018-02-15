@@ -14,46 +14,76 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+
     <script src="./content/js/lodash.js"></script>
-    
+
     <!-- Custom imports -->
     <link rel="stylesheet" href="./content/css/home.css">
     <link rel="stylesheet" href="./content/css/photos.css">
+    <link rel="stylesheet" href="./content/css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+
     <script src="./content/js/home.js"></script>
+    <script src="./content/js/500pxPhotos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#whoami">
+    <div class="customContainer navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#whoami">
                             <img src="./content/img/javipallaresap.png" height="17px">
                         </a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#photos">PHOTOS</a></li>
+                            <li><a href="#design">DESIGN</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
                     </div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#photos">PHOTOS</a></li>
-                        <li><a href="#design">DESIGN</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
 
-        </div>
-        
-        
-        
-        <div id="photos" class="row text-center">
-
+            </div>
         </div>
     </div>
-    
-    <div id="whoami">
-            <img style='height: 100%; width: 100%; object-fit: contain' src="./content/img/whoami.png"/>
+
+    <div class="animated fadeIn" id="whoami">
+        <img src="./content/img/whoami.png" />
+    </div>
+
+    <div class="container">
+        <div id="photos" class="row text-center animated fadeInUp">
+            <div class="row">
+                <div id="photo1" class="col-md-6">
+                </div>
+                <div id="photo2" class="col-md-6">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id="photo3" class="col-md-6">
+
+                </div>
+                <div id="photo4" class="col-md-6">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id="photo5" class="col-md-6">
+
+                </div>
+                <div id="photo6" class="col-md-6">
+
+                </div>
+            </div>
         </div>
+    </div>
 </body>
 
 </html>
