@@ -1,7 +1,7 @@
 var context = {
     sfdata: null,
     showedCounter: 5,
-    server: "500px"
+    server: "flickr"
 }
 
 function initFancybox() {
@@ -41,9 +41,7 @@ function getAjaxSettingsByURI(uri) {
 
 function showPhotos(photos, server) {
     var shuffledData = _.shuffle(photos);
-    context.sfdata = shuffledData;
-    context.server = server;
-
+    
     //Retrieving only first six photos
     $("#photo1").append(getPhoto(shuffledData[0]));
     $("#photo2").append(getPhoto(shuffledData[1]));
@@ -52,6 +50,19 @@ function showPhotos(photos, server) {
     $("#photo5").append(getPhoto(shuffledData[4]));
     $("#photo6").append(getPhoto(shuffledData[5]));
     $("#photos").show();
+
+}
+
+function showProjects(photos, server) {
+    var shuffledData = _.shuffle(photos);
+    context.sfdata = shuffledData;
+    context.server = server;
+
+    //Retrieving only first six photos
+    $("#project1").append(getPhoto(shuffledData[0]));
+    $("#project2").append(getPhoto(shuffledData[1]));
+    $("#project3").append(getPhoto(shuffledData[2]));
+    $("#projects").show();
 
 }
 
