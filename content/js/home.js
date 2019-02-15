@@ -41,6 +41,8 @@ function getAjaxSettingsByURI(uri) {
 
 function showPhotos(photos, server) {
     var shuffledData = _.shuffle(photos);
+    context.sfdata = shuffledData;
+    context.server = server;
     
     //Retrieving only first six photos
     $("#photo1").append(getPhoto(shuffledData[0]));
