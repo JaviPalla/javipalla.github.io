@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: javipalla.github.io
+Token: 3937f2d0fa496e9fa97a11c9bca9dd4d6b9e4edf5f3cd9ef7ef4cb7a1b267e92
